@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #A59E8C;
+    text-align: center;
+}
+/* 93A8AC   A59E8C D7CEB2 */
+
+
+/*Use Vh and vmin for the dynamic board purpose othewise i can assign it via pixel only */ 
+.container{
+    height: 70vh;  /* 70 That mean give 70 area to this container class objects*/ 
+    display: flex;  /* adjust element in the given area only not out side */
+    justify-content: center;
+    align-items: center;/* make items center*/
+}
+.game_panel{
+    height: 60vmin; /* vimin = Give 60 area of its parent*/ 
+    width: 60vmin; 
+    display: flex;  /* adjust element in the given area only not out side */
+    flex-wrap: wrap;/* wrap = if there are not place for next element then break line mean new line for the next element*/ 
+    justify-content: center;
+    align-items: center;/* make items center*/
+    gap: 1.5vmin;/* Give gap between elements */
+
+}
+
+.game_button{
+    height: 18vmin;
+    width: 18vmin;
+    border-radius: 1rem; /* 16px =1rem  used for remove default border of button */
+    border: none;  
+    box-shadow:0 0 1rem rgba(0,0,0,0.5); /* apply OWN shadow to button */
+    font-size: 10vmin;
+    color: #93A8AC;
+}
+#game_reset_button{
+
+    padding: 1rem;
+    font-size: 1.3rem;
+    background-color:#93A8AC ;
+    border-radius: 1rem; /* 16px =1rem  used for remove default border of button */
+    color: white;
+    
+
+}
